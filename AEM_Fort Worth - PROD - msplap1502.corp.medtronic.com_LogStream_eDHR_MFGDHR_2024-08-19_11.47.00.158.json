@@ -1,0 +1,236 @@
+{
+  "name": "LogStream_eDHR_MFGDHR__2024-08-19--16-47-00-158759",
+  "cmd.replication_definition": {
+    "tasks": [
+      {
+        "task": {
+          "name": "LogStream_eDHR_MFGDHR",
+          "description": "LogStream task",
+          "source_name": "BrooklynPark-ORACLE-eDHR-MFGDHR",
+          "target_names": [
+            "LogStream_eDHR_MFGDHR"
+          ],
+          "task_type": "_LOG_STREAM"
+        },
+        "source": {
+          "rep_source": {
+            "source_name": "BrooklynPark-ORACLE-eDHR-MFGDHR",
+            "database_name": "BrooklynPark-ORACLE-eDHR-MFGDHR"
+          },
+          "source_tables": {
+            "name": "BrooklynPark-ORACLE-eDHR-MFGDHR",
+            "explicit_included_tables": [
+              {
+                "owner": "DHR_MAIN",
+                "name": "AFF_MRB",
+                "estimated_size": 305549,
+                "orig_db_id": 22400,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "AFFFIBERWINDING",
+                "estimated_size": 2064538,
+                "orig_db_id": 22594,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOX_ERRORS",
+                "estimated_size": 1364694,
+                "orig_db_id": 22339,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOX_MRB",
+                "estimated_size": 413140,
+                "orig_db_id": 22410,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXBOTTOMCAPBOND",
+                "estimated_size": 1984744,
+                "orig_db_id": 22219,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXCAPPING",
+                "estimated_size": 1860210,
+                "orig_db_id": 22220,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXCENTRIFUGELARGE",
+                "estimated_size": 2011947,
+                "orig_db_id": 22411,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXCENTRIFUGESMALL",
+                "estimated_size": 2063883,
+                "orig_db_id": 22412,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXDRYING",
+                "estimated_size": 669397,
+                "orig_db_id": 22216,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXFIBERLEAKTEST",
+                "estimated_size": 1982664,
+                "orig_db_id": 22409,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXFIBERWINDING",
+                "estimated_size": 2103458,
+                "orig_db_id": 22218,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXHEXROLLING",
+                "estimated_size": 2126457,
+                "orig_db_id": 22413,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXJARBALANCECOAT",
+                "estimated_size": 2245379,
+                "orig_db_id": 22414,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXJARBALANCEDRY",
+                "estimated_size": 1752592,
+                "orig_db_id": 22217,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXOXYBALANCECOAT",
+                "estimated_size": 1514385,
+                "orig_db_id": 22609,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXOXYBALANCEDRY",
+                "estimated_size": 1558284,
+                "orig_db_id": 22479,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXPACKAGING",
+                "estimated_size": 882671,
+                "orig_db_id": 22222,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXPURGELINEBOND",
+                "estimated_size": 2004072,
+                "orig_db_id": 22679,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXTOPCAPBOND",
+                "estimated_size": 1967867,
+                "orig_db_id": 22415,
+                "validation_sampling_percentage": 0
+              },
+              {
+                "owner": "DHR_MAIN",
+                "name": "FOXVENOUSINLETCOATDRY",
+                "estimated_size": 1755732,
+                "orig_db_id": 22680,
+                "validation_sampling_percentage": 0
+              }
+            ]
+          }
+        },
+        "targets": [
+          {
+            "rep_target": {
+              "target_name": "LogStream_eDHR_MFGDHR",
+              "target_state": "DISABLED",
+              "database_name": "LogStream_eDHR_MFGDHR"
+            }
+          }
+        ],
+        "task_settings": {
+          "source_settings": {},
+          "target_settings": {
+            "queue_settings": {
+              "message_shape": {},
+              "key_shape": {}
+            },
+            "ftm_settings": {},
+            "artifacts_cleanup_enabled": false
+          },
+          "sorter_settings": {
+            "local_transactions_storage": {}
+          },
+          "common_settings": {
+            "lob_max_size": 16384,
+            "change_table_settings": {
+              "handle_ddl": false,
+              "header_columns_settings": {}
+            },
+            "full_load_enabled": false,
+            "audit_table_settings": {},
+            "batch_apply_enabled": false,
+            "dr_settings": {},
+            "statistics_table_settings": {},
+            "bidi_table_settings": {},
+            "task_uuid": "6a9e51a7-65cb-40f8-aa13-f9f6d8bb5a09",
+            "status_table_settings": {},
+            "suspended_tables_table_settings": {},
+            "history_table_settings": {},
+            "exception_table_settings": {},
+            "recovery_table_settings": {},
+            "data_batching_settings": {},
+            "data_batching_table_settings": {},
+            "log_stream_settings_depricated": {},
+            "ddl_history_table_settings": {},
+            "customized_charset_settings": {
+              "validation": {
+                "sub_char": 0
+              }
+            }
+          }
+        },
+        "loggers": {
+          "$type": "RepTaskLoggers",
+          "loggers_configuration": {},
+          "SERVER": "INFO",
+          "TARGET_APPLY": "DEBUG",
+          "SOURCE_CAPTURE": "DETAILED_DEBUG",
+          "SORTER": "DEBUG",
+          "PERFORMANCE": "DEBUG"
+        }
+      }
+    ]
+  },
+  "_version": {
+    "version": "2023.5.0.516",
+    "version_major": 2023,
+    "version_minor": 5,
+    "version_revision": 516
+  },
+  "description": "Host name: XXXXXXXX.corp.XXXXX.com, Time: 2024-08-19 16:47:00.158776"
+}
